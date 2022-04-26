@@ -32,7 +32,7 @@ class box extends StatelessWidget {
       height: 50,
       color: Colors.greenAccent,
       child: Center(
-        child: Text("Hoolll", style: TextStyle(color: Colors.white, fontSize: 24),),
+        child: Text("Uptdated", style: TextStyle(color: Color.fromARGB(255, 186, 72, 72), fontSize: 24),),
       ),
     );
   }
