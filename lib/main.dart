@@ -7,7 +7,7 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of ydour application.
+  // This widget is the rootsdfsdf of ydour application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
