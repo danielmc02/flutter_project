@@ -17,7 +17,17 @@ class _LoginScreenState extends State<LoginScreen> {
         backgroundColor: Colors.orange,
         
       ),
-      body: Row(children: [box(),box()],),
+      body: Row(
+
+          children: [
+            Container(
+              child: const Align(
+                alignment: Alignment(1, 1),
+                
+              ),
+            )
+          ],
+        ),
     );
   }
 }
@@ -31,9 +41,27 @@ class box extends StatelessWidget {
       width: 50,
       height: 50,
       color: Colors.greenAccent,
-      child: Center(
-        child: Text("Uptdated", style: TextStyle(color: Color.fromARGB(255, 186, 72, 72), fontSize: 24),),
+      child: const Center(
+        child: Text("Updated", style: TextStyle( color: Color.fromARGB(255, 186, 72, 72), fontSize: 24),),
       ),
     );
+  }
+}
+
+class checkBox extends StatefulWidget {
+  
+  const checkBox({ Key? key }) : super(key: key);
+
+  @override
+  State<checkBox> createState() => _checkBoxState();
+}
+
+class _checkBoxState extends State<checkBox> {
+bool? isChecked = false;
+  @override
+  Widget build(BuildContext context) {
+    return Checkbox(value: isChecked, onChanged: (bool? value) {setState(() {
+      isChecked = value!;
+    });} );
   }
 }
