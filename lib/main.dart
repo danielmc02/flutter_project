@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'login_screen.dart';
+import 'Screens/LoginScreen.dart/login_screen.dart';
 void main() {
   runApp(MyApp());
 }
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'poop',
       theme: ThemeData(
         primaryColor: Colors.purple,
         primarySwatch: Colors.blue,
