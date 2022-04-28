@@ -12,11 +12,19 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'poop',
-      theme: ThemeData(
+      theme: //Light Mode
+      ThemeData(
         primaryColor: Colors.purple,
+        backgroundColor: Colors.lime,
         primarySwatch: Colors.blue,
-        
-      ),
+        ),
+        darkTheme://Dark Mode
+        ThemeData(
+          primaryColor: Colors.red,
+          backgroundColor: Colors.deepOrange,
+          
+
+          ),
       home: const LoginScreen(),
     );
   }
