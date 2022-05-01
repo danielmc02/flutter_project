@@ -7,18 +7,22 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Scaffold(
-        body: Column
-        (
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: 
-          [
-            TextField(cursorColor: Colors.red,
-            maxLength: 20,)
-          ],
-
+        appBar: AppBar(title: Text("Login")),
+        body: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: const [
+            Padding(
+              padding: EdgeInsets.all(81.0),
+              child: TextField(
+                
+                decoration: InputDecoration(labelText: "YUHH"),
+              ),
+            ), TextField(
+                
+                decoration: InputDecoration(labelText: "YUHH"),
+              )]
         ),
-      )
+      ),
       );
     
   }
