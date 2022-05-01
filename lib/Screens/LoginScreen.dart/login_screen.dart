@@ -1,29 +1,37 @@
 import 'package:flutter/material.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({ Key? key }) : super(key: key);
+class _LoginScreen extends StatelessWidget {
+  const _LoginScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Scaffold(
-        appBar: AppBar(title: Text("Login")),
-        body: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: const [
-            Padding(
-              padding: EdgeInsets.all(81.0),
-              child: TextField(
-                
-                decoration: InputDecoration(labelText: "YUHH"),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Login Screen", style: TextStyle(color: Colors.pink),),
+        elevation: 1,
+      ),
+      body: Container(
+        color: Colors.red,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Container(
+              color: Colors.green,
+              child: const SizedBox(
+                height: 50,
+              
+              )
               ),
-            ), TextField(
-                
-                decoration: InputDecoration(labelText: "YUHH"),
-              )]
+              Container(
+              color: Colors.purple,
+              child: const SizedBox(
+                height: 50,
+              
+              )
+              )
+          ],
         ),
       ),
-      );
-    
+    );
   }
 }
